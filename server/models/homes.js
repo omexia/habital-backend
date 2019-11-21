@@ -34,7 +34,9 @@ let homeSchema = new Schema({
     home_predial: {
         type: Number,
         required: false
-    }
+    },
+ }, {
+    versionKey: false
 });
 
 homeSchema.methods.toJSON = function() {

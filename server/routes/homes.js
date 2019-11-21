@@ -13,10 +13,10 @@ app.get('/homes', (req, res) => {
         var homesMap = {};
 
         homes.forEach((homes) => {
-            homesMap[homes._id] = homes;
+            homesMap[homes] = homes;
         });
 
-        res.send(homesMap);
+        res.send(homes);
     });
 });
 
